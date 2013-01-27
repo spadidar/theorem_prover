@@ -1,0 +1,72 @@
+/*
+** Diagram.h
+** 
+** Made by Sasan Padidar
+** Login   <sasan@sasan-Linux>
+** 
+** Started on  Sun Oct 12 08:34:05 2008 Sasan Padidar
+** Last update Sun Oct 12 08:34:05 2008 Sasan Padidar
+*/
+
+#ifndef   	DIAGRAM_H_
+# define   	DIAGRAM_H_
+#include <vector>
+#include <string>
+#include <set>
+
+using namespace std;
+
+#include "Zone.h"
+
+
+class Diagram
+{
+ public:
+
+  string diagramLabel;
+  set<string> contours;
+
+  vector<Zone> zones;
+
+  vector<Zone> shadedZones;
+  
+  vector<Zone> allZones;
+
+  Diagram(); //constructor
+  ~Diagram(); //destructor
+
+  void setLabel(string);
+  bool setContours(set<string>);
+
+  bool setSelectedZones(vector<Zone>);
+
+  bool setShadedZones(vector<Zone>);
+
+  bool setAllZones(vector<Zone>);
+
+  string getLabel();
+  set<string> getContours();
+  
+  vector<Zone> getSelectedZones();
+  
+  vector<Zone> getShadedZones();
+
+  vector<Zone> getAllZones();
+  string createPair(string, string);
+  void displayLabel();
+  void displayContours();
+  void displaySelectedZones();
+  void displayAllZones();
+  void displayShadedZones();
+
+  string printLabel();
+  string printContours();
+  string printSelectedZones();
+  string printAllZones();
+  string printShadedZones();
+
+  string printDiagram();
+
+};
+
+#endif 	    /* !DIAGRAM_H_ */

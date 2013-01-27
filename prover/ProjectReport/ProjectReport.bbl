@@ -1,0 +1,52 @@
+\begin{thebibliography}{10}
+
+\bibitem{ANSI_91}
+ANSI/IEEE.
+\newblock Standard glossary of software engineering terminology.
+\newblock {\em ANSI/IEEE}, 1991.
+
+\bibitem{Fish_2007}
+Andrew Fish, Gem Stapleton, Judith Masthoff, and Jean Flower.
+\newblock Automated theorem proving in euler diagram systems.
+\newblock {\em Springer Science + Business Media B.V}, 2007.
+
+\bibitem{Kent_Euler}
+http://www.cs.kent.ac.uk/events/conf/2004/euler/eulerdiagrams.html.
+\newblock Euler diagrams.
+
+\bibitem{Howse_2005}
+Steve~Schuman John~Howse.
+\newblock Precise visual modeling: A case-study.
+\newblock {\em Springer-Verlag}, 2005.
+
+\bibitem{Mateescu_1997}
+Alexandru Mateescu and Arto Salomaa.
+\newblock Formal languages: an introduction and a synopsis.
+\newblock pages 1--39, 1997.
+
+\bibitem{Shin_1994}
+Sun-Joo Shin.
+\newblock The logical status of diagrams.
+\newblock {\em Cambridge University Press}, 1994.
+
+\bibitem{Gem_1}
+Gem Stapleton.
+\newblock Diagrammatic logics: Past, present and future.
+\newblock 2005.
+
+\bibitem{Aidan_Gem}
+Gem Stapleton and Aidan Delaney.
+\newblock Evaluating and generalizing constraint diagrams.
+\newblock {\em Visual Languages and Computing}, 2008.
+
+\bibitem{Gem_Judith}
+Gem Stapleton and Judith Masthoff.
+\newblock Incorporating negation into visual logics: A case study using euler
+  diagrams.
+
+\bibitem{Taylor_book}
+John Taylor and Rowan Garnier.
+\newblock {\em Discrete Mathematics for New Technology}.
+\newblock Institute of Physics Publishing, second edition, 2002.
+
+\end{thebibliography}

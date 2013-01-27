@@ -1,0 +1,29 @@
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {subsection}{\numberline {1.1}General}{1}
+\contentsline {section}{\numberline {2}Software Specification}{2}
+\contentsline {subsection}{\numberline {2.1}Formal Languages}{2}
+\contentsline {subsection}{\numberline {2.2}Visual Modelling}{2}
+\contentsline {subsection}{\numberline {2.3}Project Objectives}{3}
+\contentsline {section}{\numberline {3}Visual Modelling}{4}
+\contentsline {subsection}{\numberline {3.1}Brief Diagrams History}{4}
+\contentsline {subsection}{\numberline {3.2}Overview Of Diagrams}{5}
+\contentsline {subsection}{\numberline {3.3}Euler Diagrams}{5}
+\contentsline {subsection}{\numberline {3.4}Diagrams}{6}
+\contentsline {subsection}{\numberline {3.5}Notations}{6}
+\contentsline {subsection}{\numberline {3.6}Reasoning}{6}
+\contentsline {subsection}{\numberline {3.7}Reasoning Rules}{7}
+\contentsline {subsubsection}{\numberline {3.7.1}Add Contour}{7}
+\contentsline {subsubsection}{\numberline {3.7.2}Remove Contour}{8}
+\contentsline {subsubsection}{\numberline {3.7.3}Add Shaded Zone}{8}
+\contentsline {subsubsection}{\numberline {3.7.4}Remove Shaded Zone}{9}
+\contentsline {subsubsection}{\numberline {3.7.5}Identity Law}{9}
+\contentsline {subsubsection}{\numberline {3.7.6}Complement Laws}{9}
+\contentsline {subsubsection}{\numberline {3.7.7}De Morgan's Laws}{10}
+\contentsline {subsection}{\numberline {3.8}Unitary Diagram Proving Algorithm}{11}
+\contentsline {subsection}{\numberline {3.9}Compound Diagram Proving Algorithm}{11}
+\contentsline {section}{\numberline {4}Design}{11}
+\contentsline {section}{\numberline {5}Implementation}{11}
+\contentsline {section}{\numberline {6}Testing}{11}
+\contentsline {section}{\numberline {7}Conclusion}{11}
+\contentsline {subsection}{\numberline {7.1}Lessons Learnt}{11}
+\contentsline {subsection}{\numberline {7.2}Future Work}{11}

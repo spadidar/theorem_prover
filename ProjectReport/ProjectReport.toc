@@ -1,0 +1,111 @@
+\contentsline {section}{\numberline {1}Introduction}{5}
+\contentsline {subsection}{\numberline {1.1}Brief Introduction}{5}
+\contentsline {subsection}{\numberline {1.2}Introduction to Reliability}{6}
+\contentsline {subsection}{\numberline {1.3}Project Objectives}{7}
+\contentsline {section}{\numberline {2}Project}{8}
+\contentsline {subsection}{\numberline {2.1}Objectives}{8}
+\contentsline {subsection}{\numberline {2.2}Required Knowledge}{8}
+\contentsline {subsection}{\numberline {2.3}Planning}{9}
+\contentsline {subsection}{\numberline {2.4}Time Management}{11}
+\contentsline {subsection}{\numberline {2.5}Tasks}{12}
+\contentsline {section}{\numberline {3}Software Specification}{12}
+\contentsline {subsection}{\numberline {3.1}Formal Languages}{12}
+\contentsline {subsection}{\numberline {3.2}Visual Modelling}{13}
+\contentsline {section}{\numberline {4}Visual Modelling}{16}
+\contentsline {subsection}{\numberline {4.1}Brief Diagrams History}{16}
+\contentsline {subsection}{\numberline {4.2}Overview Of Diagrams}{16}
+\contentsline {subsection}{\numberline {4.3}Euler Diagrams}{17}
+\contentsline {subsection}{\numberline {4.4}Diagrams}{19}
+\contentsline {subsection}{\numberline {4.5}Notations}{19}
+\contentsline {subsection}{\numberline {4.6}Reasoning}{19}
+\contentsline {subsection}{\numberline {4.7}Reasoning Rules}{20}
+\contentsline {subsubsection}{\numberline {4.7.1}Add Contour}{20}
+\contentsline {subsubsection}{\numberline {4.7.2}Remove Contour}{21}
+\contentsline {subsubsection}{\numberline {4.7.3}Add Shaded Zone}{22}
+\contentsline {subsubsection}{\numberline {4.7.4}Remove Shading from a Zone}{23}
+\contentsline {subsubsection}{\numberline {4.7.5}Identity Law}{24}
+\contentsline {subsubsection}{\numberline {4.7.6}Complement Laws}{24}
+\contentsline {subsubsection}{\numberline {4.7.7}De Morgan's Laws}{24}
+\contentsline {subsubsection}{\numberline {4.7.8}Involution}{25}
+\contentsline {subsection}{\numberline {4.8}Distributivity}{25}
+\contentsline {subsection}{\numberline {4.9}Idempotency}{26}
+\contentsline {subsection}{\numberline {4.10}Information Weakening Rules}{26}
+\contentsline {subsubsection}{\numberline {4.10.1}Inconsistency}{26}
+\contentsline {subsubsection}{\numberline {4.10.2}Connceting a diagram}{26}
+\contentsline {subsubsection}{\numberline {4.10.3}Removing a diagram}{26}
+\contentsline {section}{\numberline {5}Unitary Diagram Proving Algorithm}{27}
+\contentsline {subsubsection}{\numberline {5.0.4}Proof Example}{28}
+\contentsline {section}{\numberline {6}Project Design}{31}
+\contentsline {subsection}{\numberline {6.1}Initial Steps}{31}
+\contentsline {subsection}{\numberline {6.2}Design Methodology and Prioritization}{31}
+\contentsline {subsection}{\numberline {6.3}Prioritization Of Non-Functional Aspects}{33}
+\contentsline {subsection}{\numberline {6.4}Design Patterns}{36}
+\contentsline {subsection}{\numberline {6.5}General Responsibility Assignment Software Patterns}{37}
+\contentsline {subsection}{\numberline {6.6}Prioritazation Of Non-Functional Aspects}{37}
+\contentsline {subsection}{\numberline {6.7}Domain Model}{39}
+\contentsline {subsection}{\numberline {6.8}Process of Designing}{39}
+\contentsline {subsection}{\numberline {6.9}Class Diagram Explanation}{42}
+\contentsline {subsection}{\numberline {6.10}Classes Explanation}{46}
+\contentsline {subsubsection}{\numberline {6.10.1}Class: TED (Theorem prover for Eulre Diagrams)}{46}
+\contentsline {subsubsection}{\numberline {6.10.2}Class: DiagramLoader}{46}
+\contentsline {subsubsection}{\numberline {6.10.3}Class: LexicalAnalyser}{47}
+\contentsline {subsubsection}{\numberline {6.10.4}Class: Parser}{47}
+\contentsline {subsubsection}{\numberline {6.10.5}Class: SyntaxChecker}{47}
+\contentsline {subsubsection}{\numberline {6.10.6}Class: DiagramCreator}{47}
+\contentsline {subsubsection}{\numberline {6.10.7}Class: ProofWriter}{47}
+\contentsline {subsubsection}{\numberline {6.10.8}Class: Prover}{47}
+\contentsline {subsubsection}{\numberline {6.10.9}Class: UnitaryProver}{48}
+\contentsline {subsubsection}{\numberline {6.10.10}Class: CompoundProver}{48}
+\contentsline {subsubsection}{\numberline {6.10.11}Class: UnitaryProverCreator}{48}
+\contentsline {subsubsection}{\numberline {6.10.12}Class: CompoundProverCreator}{48}
+\contentsline {subsubsection}{\numberline {6.10.13}Class: ProverCreator}{48}
+\contentsline {subsubsection}{\numberline {6.10.14}Class: Rules}{48}
+\contentsline {subsubsection}{\numberline {6.10.15}Class: UnitaryRule}{49}
+\contentsline {subsubsection}{\numberline {6.10.16}Class: CompoundRule}{49}
+\contentsline {subsubsection}{\numberline {6.10.17}Class: Traversal}{49}
+\contentsline {subsubsection}{\numberline {6.10.18}Class: InorderTreeTraversal}{49}
+\contentsline {subsubsection}{\numberline {6.10.19}Class: Diagram}{49}
+\contentsline {subsubsection}{\numberline {6.10.20}Class: UnitaryDiagram}{49}
+\contentsline {subsubsection}{\numberline {6.10.21}Class: Contour}{50}
+\contentsline {subsubsection}{\numberline {6.10.22}Class: Zone}{50}
+\contentsline {subsubsection}{\numberline {6.10.23}Class: CompoundDiagram}{50}
+\contentsline {subsubsection}{\numberline {6.10.24}Class: CompoundCreator}{50}
+\contentsline {subsubsection}{\numberline {6.10.25}Class: CompoundTree}{51}
+\contentsline {subsubsection}{\numberline {6.10.26}Class: CompoundNode}{51}
+\contentsline {subsubsection}{\numberline {6.10.27}Class: DiagramHolder}{51}
+\contentsline {subsubsection}{\numberline {6.10.28}Class: SetMaker}{51}
+\contentsline {subsubsection}{\numberline {6.10.29}Class: TreeBuilder}{51}
+\contentsline {subsubsection}{\numberline {6.10.30}Class: ExpressionTokenizer}{52}
+\contentsline {subsubsection}{\numberline {6.10.31}Class: InfixToPostfix}{52}
+\contentsline {section}{\numberline {7}Implementation}{53}
+\contentsline {subsection}{\numberline {7.1}Language}{53}
+\contentsline {subsection}{\numberline {7.2}The Editor}{54}
+\contentsline {subsection}{\numberline {7.3}Why Vectors?}{55}
+\contentsline {subsection}{\numberline {7.4}Combination Algorithm}{56}
+\contentsline {subsection}{\numberline {7.5}Tree Building}{58}
+\contentsline {subsubsection}{\numberline {7.5.1}Expression Tokenizing}{59}
+\contentsline {subsubsection}{\numberline {7.5.2}Infix to Postfix}{59}
+\contentsline {subsubsection}{\numberline {7.5.3}Tree Building}{61}
+\contentsline {subsection}{\numberline {7.6}In-order Tree Traversal}{63}
+\contentsline {subsection}{\numberline {7.7}Applying Rules}{66}
+\contentsline {section}{\numberline {8}Testing}{68}
+\contentsline {subsection}{\numberline {8.1}Black-Box Testing}{69}
+\contentsline {subsection}{\numberline {8.2}Unit Testing}{69}
+\contentsline {subsection}{\numberline {8.3}Unitary Theorem Proving Testing}{70}
+\contentsline {subsubsection}{\numberline {8.3.1}Tested Diagrams}{71}
+\contentsline {subsubsection}{\numberline {8.3.2}Test 1: $ d_{7} \rightarrow d_{1} $}{71}
+\contentsline {subsubsection}{\numberline {8.3.3}Test 2: $ d_{4} \nrightarrow d_{10} $}{75}
+\contentsline {subsubsection}{\numberline {8.3.4}Test 3: $ d_{6} \nrightarrow d_{5} $}{77}
+\contentsline {subsubsection}{\numberline {8.3.5}Test 4: $ d_{13} \rightarrow d_{12} $}{77}
+\contentsline {subsubsection}{\numberline {8.3.6}Test 5: $ d_{16} \rightarrow d_{5} $}{80}
+\contentsline {subsection}{\numberline {8.4}Compound Diagram Phase Testing}{83}
+\contentsline {subsubsection}{\numberline {8.4.1}Unit Test 1: ExpressionTokenizer}{84}
+\contentsline {subsubsection}{\numberline {8.4.2}Unit Test 2: InfixToPostfix}{85}
+\contentsline {subsubsection}{\numberline {8.4.3}Unit Test 3: CompoundNode}{86}
+\contentsline {subsubsection}{\numberline {8.4.4}Unit Test 4: TreeBuilder}{87}
+\contentsline {subsubsection}{\numberline {8.4.5}Unit Test 5: TreeTraversal}{88}
+\contentsline {subsubsection}{\numberline {8.4.6}Unit Test 6: Rules}{88}
+\contentsline {subsection}{\numberline {8.5}Testing DeMorgan's Law Application}{89}
+\contentsline {section}{\numberline {9}Conclusion}{90}
+\contentsline {subsection}{\numberline {9.1}Lessons Learnt}{91}
+\contentsline {subsection}{\numberline {9.2}Future Work}{94}

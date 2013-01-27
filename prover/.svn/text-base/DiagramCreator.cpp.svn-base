@@ -1,0 +1,21 @@
+#include "DiagramCreator.h"
+
+DiagramCreator::DiagramCreator(string l, set<string> cs, vector<Zone> zs, vector<Zone> szs)
+{
+  label = l;
+  c = cs;
+  z = zs;
+  sz =szs;
+}
+
+Diagram DiagramCreator::createDiagram()
+{
+  Diagram d;
+  d.setLabel(label);
+  d.setContours(c);
+  d.setSelectedZones(z);
+  d.setShadedZones(sz);
+
+  return d;
+ 
+}

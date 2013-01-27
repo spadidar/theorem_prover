@@ -1,0 +1,4 @@
+label = d1;
+contours      = {A, B, C};
+zones		= {(A,BC) ,(B,AC),(C,AB), (AB,C) , (AC, B), (ABC, ) };
+shaded-zones  = {(A,BC) ,(B,AC),(C,AB), (ABC, )};

@@ -1,0 +1,254 @@
+sasan@sasan-ubuntu64:~/Cworkspace/prover$ bzr log
+------------------------------------------------------------
+revno: 36
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Wed 2009-04-22 10:31:24 +0100
+message:
+  Fixed some errors, made the rule application to work, compound rules was also designed and fixed
+------------------------------------------------------------
+revno: 35
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Wed 2009-04-15 14:15:42 +0100
+message:
+  fixed some of the tests the traversal tests need fixiing
+------------------------------------------------------------
+revno: 34
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Mon 2009-04-13 19:09:21 +0100
+message:
+  fixed the problem of proof writer while writing the documentation.. there were more errors found in the writing part now all seem to be fixed#
+------------------------------------------------------------
+revno: 33
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Mon 2009-04-13 18:07:17 +0100
+message:
+  fixed the problem of proof writer while writing the documentation
+------------------------------------------------------------
+revno: 32
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Sat 2009-03-28 08:55:50 +0000
+message:
+  The fix from 20 march for file handling
+------------------------------------------------------------
+revno: 31
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Sat 2009-03-28 08:48:54 +0000
+message:
+  The fix from 20 march for file handling
+------------------------------------------------------------
+revno: 30
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Mon 2009-03-16 16:45:36 +0000
+message:
+  fixed the selected zones when a new shaded zone is added now it is also added to selected zones as well. Now the correct set is printed
+------------------------------------------------------------
+revno: 29
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Sat 2009-03-07 15:49:22 +0000
+message:
+  modified to check push stuff
+------------------------------------------------------------
+revno: 28
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Fri 2009-03-06 17:10:43 +0000
+message:
+  First of report is added
+------------------------------------------------------------
+revno: 27
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Tue 2009-02-24 09:12:40 +0000
+message:
+  is ready for the first rule. There is a memory leak problem if I delete the root pointer in Treebuilder has to be figured out why. It now prints the expression from the tree properly
+------------------------------------------------------------
+revno: 26
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Mon 2009-02-23 16:16:25 +0000
+message:
+  Fixed the pointer and memory problem by deleting the pointers in Inorder test that was the porblem. The tree traversal works fine next step is to make it create the expression and the functions for checking the patterns.
+------------------------------------------------------------
+revno: 25
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Mon 2009-02-23 11:53:37 +0000
+message:
+  The error was not initializing the node types and booleans at start which caused a lot of problems. they are fixed the print statement s are in the code now next step clean up
+------------------------------------------------------------
+revno: 24
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Sat 2009-02-21 16:03:30 +0000
+message:
+  treebuildeTest is added also
+------------------------------------------------------------
+revno: 23
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Sat 2009-02-21 16:03:06 +0000
+message:
+  Is fixed the expression tree was wrong and also the builder now all are fixed next step is the traversal and the rules
+------------------------------------------------------------
+revno: 22
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Sat 2009-02-21 14:30:40 +0000
+message:
+  Got to testings the tests are failing becuase of the tokens size in expressiontokenzier
+------------------------------------------------------------
+revno: 21
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Fri 2009-02-20 15:45:16 +0000
+message:
+  Diagram loader loads all necessary stuff for compounds
+------------------------------------------------------------
+revno: 20
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Fri 2009-02-20 15:44:39 +0000
+message:
+  Tree builder is done, need to fix the root passing or vector of pointers. All necessary classes are added as well
+------------------------------------------------------------
+revno: 19
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Thu 2009-02-19 13:30:14 +0000
+message:
+  Infix to post fix Queue is changed to a vector because of printing issues with queue
+------------------------------------------------------------
+revno: 18
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Thu 2009-02-19 13:05:44 +0000
+message:
+  Got the Infix to Post fix working with tests as well
+------------------------------------------------------------
+revno: 17
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Thu 2009-02-19 13:05:24 +0000
+message:
+  Got the Infix to Post fix working fine but there is a problem with the queue printing
+------------------------------------------------------------
+revno: 16
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Tue 2009-02-17 16:17:57 +0000
+message:
+  ExpressionParser is written and tested. works under normal conditions perfectly fine. Needs  more testing
+------------------------------------------------------------
+revno: 15
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Tue 2009-02-17 09:15:13 +0000
+message:
+  The tree building process startede. In the middle of lex  had to leave.
+------------------------------------------------------------
+revno: 14
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Thu 2009-02-12 13:31:14 +0000
+message:
+  Traversal works now. Must figure out how rules work and then the proof business then I can fix the traversal business.The CompoundTree is added to encapsulate the nodes 
+------------------------------------------------------------
+revno: 13
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Thu 2009-02-12 11:04:57 +0000
+message:
+  Inorder traversal is added and works needs more work to be done on it. Tests are set and working
+------------------------------------------------------------
+revno: 12
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Thu 2009-02-12 11:03:40 +0000
+message:
+  Nodes and traversal are all set. Traversal needs some more thinking and fixing. The testa
+------------------------------------------------------------
+revno: 11
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Thu 2009-02-12 08:51:31 +0000
+message:
+  CompoundNode constructors are added and tested  working fine. Cppunit is updated to handle CompoundNode 
+------------------------------------------------------------
+revno: 10
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Thu 2009-02-12 00:53:33 +0000
+message:
+  Got the constructors done. Tests are working. The make file needs to be changed to write less code. More tests must be added
+------------------------------------------------------------
+revno: 9
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Wed 2009-02-11 22:11:08 +0000
+message:
+  Added set type and get to compound node. Figured out its not really necessary to havea all those classes for nodes just one is enough
+------------------------------------------------------------
+revno: 8
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Wed 2009-02-11 22:02:09 +0000
+message:
+  the structure is set and complete
+------------------------------------------------------------
+revno: 7
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Wed 2009-02-11 15:59:33 +0000
+message:
+  unit tests
+------------------------------------------------------------
+revno: 6
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Wed 2009-02-11 15:51:56 +0000
+message:
+  compound business structure is set eventually needs the rest of the objects. Cppunit works finally.
+------------------------------------------------------------
+revno: 5
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Mon 2009-02-09 21:26:38 +0000
+message:
+  Compound construction is started
+------------------------------------------------------------
+revno: 4
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Mon 2009-02-09 21:24:36 +0000
+message:
+  4 test
+------------------------------------------------------------
+revno: 3
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Mon 2009-02-09 21:22:43 +0000
+message:
+  third test
+------------------------------------------------------------
+revno: 2
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Mon 2009-02-09 19:06:29 +0000
+message:
+  test commit
+------------------------------------------------------------
+revno: 1
+committer: Sasan Padidar <admin@bubbleneblua.com>
+branch nick: prover
+timestamp: Mon 2009-02-09 19:05:22 +0000
+message:
+  initial for bazaar
+

@@ -1,0 +1,43 @@
+/*
+** SyntaxChecker.h
+** 
+** Made by Sasan Padidar
+** Login   <sasan@sasan-Linux>
+** 
+** Started on  Sat Nov 15 01:24:38 2008 Sasan Padidar
+** Last update Sat Nov 15 01:24:38 2008 Sasan Padidar
+*/
+
+#ifndef   	SYNTAXCHECKER_H_
+# define   	SYNTAXCHECKER_H_
+
+#include <string>
+#include <vector>
+#include <set>
+#include <iostream>
+
+#include <string>
+#include <string>
+
+using namespace std;
+
+#include "Zone.h"
+
+class SyntaxChecker
+{
+ public:
+  
+  SyntaxChecker(vector<Zone>, vector<Zone>);
+  bool checkZones();
+  bool checkShadedZ();
+  bool isSet(vector<Zone>);
+  bool check();
+      
+ private:
+  vector<Zone> z;
+  vector<Zone> sz;
+  set<string> c;
+  
+};
+
+#endif 	    /* !SYNTAXCHECKER_H_ */

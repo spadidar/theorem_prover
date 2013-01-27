@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: ProjectReport.aux
+The style file: plain.bst
+Database file #1: refs.bib
+Warning--empty journal in Mateescu_1997
+Warning--empty journal in Gem_Judith
+Warning--empty year in Gem_Judith
+You've used 23 entries,
+            2118 wiz_defined-function locations,
+            628 strings with 6903 characters,
+and the built_in function-call counts, 5753 in all, are:
+= -- 567
+> -- 245
+< -- 3
++ -- 101
+- -- 76
+* -- 295
+:= -- 1032
+add.period$ -- 68
+call.type$ -- 23
+change.case$ -- 107
+chr.to.int$ -- 0
+cite$ -- 26
+duplicate$ -- 254
+empty$ -- 448
+format.name$ -- 76
+if$ -- 1191
+int.to.chr$ -- 0
+int.to.str$ -- 23
+missing$ -- 27
+newline$ -- 117
+num.names$ -- 46
+pop$ -- 126
+preamble$ -- 1
+purify$ -- 84
+quote$ -- 0
+skip$ -- 171
+stack$ -- 0
+substring$ -- 203
+swap$ -- 39
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 74
+warning$ -- 3
+while$ -- 55
+width$ -- 25
+write$ -- 244
+(There were 3 warnings)

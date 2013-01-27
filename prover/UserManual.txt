@@ -1,0 +1,23 @@
+Proving Unitary Diagrams:
+
+1. Load Diagrams by command -l (if the diagram is not in the same folder as the one that the ted.exe file is, type in the URL of the file i.e. c:\diagram\d1).
+   The diagram does not need to have the file format of a "name.txt". This porgram can load text files automatically.
+
+2. Load as many diagrams as necessary.
+
+3. Type in the command -p press Enter.
+
+4. Type in the name of the first diagram (premise) press Enter.
+
+5. Type in the name of the second diagram (conclusion) press Enter.
+
+6. If a proof exists it will be saved in the folder where ted.exe is.
+
+
+Applying DeMorgan Law:
+
+1. choose DeMorgan Or (-dor) or DeMorgan And (-dand) press Enter.
+
+2. Type in the compound diagram statement. Make sure you enter END at the end of the statement. Press Enter.
+
+3. If the rule can be applied it will display the postfix version of the compound diagram after the rule is applied on it.

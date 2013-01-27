@@ -1,0 +1,164 @@
+#include "Prover.h"
+
+DiagramHolder holder;
+Diagram premise;
+Diagram conclusion;
+
+void Prover::getDiagramHolder(vector<Diagram> dh)
+{
+
+}
+
+bool Prover::prove(Diagram d1, Diagram d2)
+{
+  set<string>::iterator it;
+  premise =  d1;
+  conclusion = d2;
+
+  
+  Rules rules(premise);// rrule object for the premise
+
+  vector<Zone> preSZ =  addMissingZones(premise);//premise new missing shaded
+
+  set<string> preC = addMissingContours(premise, conclusion);//premise
+							     //Missing Contours
+
+  Rules r(conclusion); // rule object for conclusion
+
+  vector<Zone> conSZ =  addMissingZones(conclusion);//conclusion new ShadedZones
+  set<string> conC = addMissingContours(conclusion, premise );//conclusion
+							      //C
+
+  //***************************************************
+  //add all shaded Zones
+  for (int i =0; i< preSZ.size() ; i++)
+    {
+      holder.addDiagram(rules.addShadedZone(preSZ[i]));
+    }
+  //add Muissing contours
+  for(it = preC.begin(); it!= preC.end(); it++)
+    {
+      holder.addDiagram(rules.addContour(*it));
+    }
+  //***************************************************
+
+  Diagram finalP = holder.getLastDiagram(); //get the last conclusio
+					    //after premise
+
+  //add all Shaded Zones in conclusion
+  for (int i =0; i< conSZ.size() ; i++)
+    {
+      holder.addDiagram(r.addShadedZone(conSZ[i]));
+    }
+  //add all contours to conclusion
+  for(it = conC.begin(); it!= conC.end(); it++)
+    {
+      holder.addDiagram(r.addContour(*it));
+    }
+  //****************************************************
+  
+  holder.displayAllDiagrams();
+
+  Diagram finalC = holder.getLastDiagram(); // get the last Premise
+					    // after rules
+    
+
+  vector<Zone> finalPSZ = finalP.getShadedZones(); // get shaded z of
+						   // last premise and
+						   // last conclusion
+  vector<Zone> finalCSZ = finalC.getShadedZones();
+
+
+  vector<int> inds; // index holder
+
+  //if final shaded zs of conclusion is a subset of the zones there is
+  //a proof
+  for (int i =0; i< finalCSZ.size() ; i++)
+    {
+      for(int j =0; j< finalPSZ.size() ; j++)
+	{
+	  if( finalCSZ[i].equals(finalPSZ[j]) )
+	    inds.push_back(i);
+	}
+    }
+  
+  if(inds.size() == finalCSZ.size())
+    return true;
+  
+  return false;
+}
+
+vector<Zone> Prover::addMissingZones(Diagram d)
+{
+  vector<Zone> selectedZones = d.getSelectedZones();
+  vector<Zone> allZones = d.getAllZones();
+  vector<Zone> shadedZones = d.getShadedZones();
+
+  vector<Zone> newShadedZ;
+
+  Rules rules(d);
+
+  Zone *zz = new Zone();
+
+  //check if the zone is not selected add it to the shadedz
+  for (int i =0; i<allZones.size() ; i++)
+    {
+      bool ok = true;
+
+      for (int x =0; x< selectedZones.size();  x++)
+	{
+	  if(allZones[i].equals(selectedZones[x]) )
+	    {
+	      ok = false;
+	    }
+	}
+
+      //check its not already shaded
+
+      for (int x =0; x< shadedZones.size(); x++)
+	{
+	  //check if it equals the allZone
+	  if(allZones[i].equals(shadedZones[x]))
+	    {
+	      ok = false;
+	    }
+	}
+
+      //    if OK is not false it means the zone is missing add it to newZ
+      if(ok == true)
+	newShadedZ.push_back(allZones[i]);
+     
+    }
+
+  return newShadedZ;
+}
+
+set<string> Prover::addMissingContours(Diagram d1, Diagram d2)
+{
+  set<string> newC;
+  set<string> preC = d1.getContours();
+  set<string> conC = d2.getContours();
+  
+  set<string>::iterator itP; //pre iterator
+  set<string>::iterator itC;//conc iterato
+
+  for(itC = preC.begin(); itC != preC.end(); itC++)
+    {
+      itP = conC.find(*itC);
+      if(itP != conC.end())
+	{
+	  conC.erase(*itP);
+	}
+    }
+  for(itC = conC.begin(); itC != conC.end(); itC++)  
+    {
+      newC.insert(*itC);
+    }
+
+  return newC; 
+}
+
+DiagramHolder Prover::getHolder()
+{
+  return holder;
+}

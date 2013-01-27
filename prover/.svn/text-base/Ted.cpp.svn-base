@@ -1,0 +1,129 @@
+#include <iostream>
+
+using namespace std;
+
+#include "Ted.h"
+
+int main()
+{
+  cout << "* Euler Diagram Theorem Prover *\n" << endl;
+  
+  Ted ted;
+  DiagramHolder holder;
+
+  string command = "";
+  
+  while( command != "exit") 
+    {
+      cout << "Enter Command (help for help): " ;
+      cin >> command;
+
+      //Help-------------------------------
+      if (command == "help")
+	{
+	  cout << "Commands are: \n" << endl;
+	  
+	  cout << " -l   = Load Diagram \n" << endl;
+	  cout << " -p   = Prove Diagrams \n" << endl;
+	  
+	  cout << "\n" ;
+
+	  cout << " exit = Quits the program \n" << endl;
+	}
+      
+      //Load Diagram
+	  
+      else if(command == "-l")
+	{
+	  string dName = "";
+	  cout << "Diagram File  Name: " ;
+
+	  cin >> dName;
+
+	  if (dName != "")
+	    {
+	      Diagram d = ted.getDiagram( dName);//load diagram
+	      Rules rules(d);
+
+	      d.setAllZones(rules.generateZones());
+
+	      holder.addDiagram(d);//save it
+	      
+	    }
+	  else
+	    cout << "File name error!" << endl;
+
+	}
+
+      //Prover--------------------------------
+      else if( command == "-p")
+	{
+	  string dl = ""; //diagram label
+	  string cl = "";
+
+	  Diagram d1;
+	  Diagram d2;
+
+	  cout << "Available Diagrams: " << endl;
+	  holder.displayLabels();
+
+	  cout << "Select First Diagram: " ;
+	  cin >> dl;
+
+	  cout << "Select Second Diagram: " ;
+	  cin >> cl;
+	  
+	  d1 = holder.getDiagram(dl); //get the diagram from its label
+	  d2 = holder.getDiagram(cl); //get the diagram from its label
+
+	  Prover prover;
+
+	  bool b = prover.prove(d1, d2);
+
+	  if (b)
+	      {
+		cout << "**Proof Exists**" << endl;
+		ted.generateProof(prover.getHolder());
+	      }
+	  else
+	    cout << "No Proof Exists!" << endl;
+	
+	}
+
+    }//end wile
+
+}//end main
+
+Diagram Ted::getDiagram(string fileN)
+{
+  
+  LexicalAnalyzer la(fileN);
+  la.scan();
+
+  Parser parser (la.getTokens());
+  parser.parse();
+  string l =parser.getLabel();
+  set<string> c = parser.getContours();
+  vector<Zone> z = parser.getZones();
+  vector<Zone> sz = parser.getShadedZones();
+
+  SyntaxChecker *sc = new SyntaxChecker(z, sz);
+  
+  bool check = sc->check(); // check the syntax Prnts error if there
+			    // is an error
+
+  set<string>::iterator it;
+
+  
+  DiagramCreator dc (l, c,z,sz);
+    
+  return dc.createDiagram();
+    
+}
+
+void Ted::generateProof(DiagramHolder h)
+{
+  ProofWriter pw;
+  pw.writeProof(h);
+  
+}

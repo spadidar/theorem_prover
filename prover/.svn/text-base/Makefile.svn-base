@@ -1,0 +1,36 @@
+ted:	Ted.o Parser.o SyntaxChecker.o LexicalAnalyzer.o DiagramCreator.o DiagramHolder.o Diagram.o Rules.o Prover.o Zone.o ProofWriter.o
+	g++  -o ted Ted.o Parser.o SyntaxChecker.o LexicalAnalyzer.o DiagramCreator.o DiagramHolder.o Zone.o Diagram.o Rules.o Prover.o ProofWriter.o
+
+Zone.o: Zone.cpp Zone.h
+	g++  -c Zone.cpp
+
+Diagram.o: Diagram.cpp Diagram.h Zone.h 
+	g++  -c Diagram.cpp
+
+Rules.o:  Rules.cpp Rules.h  
+	g++  -c   Rules.cpp
+
+Parser.o: Parser.cpp Parser.h Zone.h 
+	g++ -c Parser.cpp
+
+SyntaxChecker.o: SyntaxChecker.cpp SyntaxChecker.h Zone.h 
+	g++ -c SyntaxChecker.cpp
+
+LexicalAnalyzer.o: LexicalAnalyzer.cpp LexicalAnalyzer.h
+	g++ -c LexicalAnalyzer.cpp
+
+DiagramHolder.o: DiagramHolder.cpp DiagramHolder.h Diagram.h  
+	g++ -c DiagramHolder.cpp
+
+DiagramCreator.o: DiagramCreator.cpp DiagramCreator.h Diagram.h Zone.h
+	g++ -c DiagramCreator.cpp
+
+Prover.o:  Prover.cpp Prover.h Diagram.h Rules.h Zone.h 
+	g++  -c Prover.cpp
+
+ProofWriter.o:  ProofWriter.cpp ProofWriter.h Diagram.h Zone.h DiagramHolder.h 
+	g++  -c ProofWriter.cpp
+	
+Ted.o: Ted.cpp Prover.h SyntaxChecker.h LexicalAnalyzer.h Parser.h Diagram.h Rules.h DiagramCreator.o DiagramHolder.o Zone.h 
+	g++  -c Ted.cpp
+

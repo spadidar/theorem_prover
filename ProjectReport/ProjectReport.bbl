@@ -1,0 +1,124 @@
+\begin{thebibliography}{10}
+
+\bibitem{Kent_Euler}
+Anon.
+\newblock Euler diagrams.
+\newblock December 2008, available at
+  \texttt{http://www.cs.kent.ac.uk/events/conf/2004/euler/eulerdiagrams.html}.
+
+\bibitem{shunting_site}
+Anon.
+\newblock Infix to rpn.
+\newblock Feburary 2009, available at
+  \texttt{http://www.tex.ac.uk/cgi-bin/texfaq2html?label=citeURL}.
+
+\bibitem{testing_site}
+Anon.
+\newblock Software testing.
+\newblock January 2009, available at \texttt{http://www.testingbrain.com/}.
+
+\bibitem{ANSI_91}
+ANSI/IEEE.
+\newblock Standard glossary of software engineering terminology.
+\newblock {\em ANSI/IEEE}, pages 791--1991, 1991.
+
+\bibitem{KentBeck_site}
+Kent Beck.
+\newblock Simple smalltalk testing: With patterns.
+\newblock January 2009, available at
+  \texttt{http://www.xprogramming.com/testfram.htm}.
+
+\bibitem{Kent_book}
+Kent Beck and Cynthia Andres.
+\newblock {\em Extreme Programming Explained: Embrace Change}.
+\newblock Addison-Wesley Professional, Massachusetts, second edition, 2004.
+
+\bibitem{edgar_paper}
+E.W. Dijkstra.
+\newblock An algol 60 translator for the x1.
+\newblock {\em Mathematisch Centrum}, 1961.
+
+\bibitem{Fish_2007}
+Andrew Fish, Jean Flower, Judith Masthoff, and Gem Stapleton.
+\newblock Automated theorem proving in {E}uler diagram systems.
+\newblock {\em Springer Science}, pages 432--451, 2007.
+
+\bibitem{Gof_book}
+Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides.
+\newblock {\em Design Patterns: Elements of Reusable Object-Oriented Software}.
+\newblock Addison-Wesley Professional, Boston, 1st edition, 1994.
+
+\bibitem{algo_book}
+Michael Goodrich and Roberto Tamassia.
+\newblock {\em Data Structures and Algorithms in Java}.
+\newblock John Wiley and Sons, New Jersey, fourth edition, 2006.
+
+\bibitem{ISTQB_book}
+Dorothy Graham, Erik Veenendaal, Isabel Evans, and Rex Black.
+\newblock {\em Foundations Of Software Testing}.
+\newblock ISTQB CERTIFICATION, s.l., 1st edition, 200? probable decade.
+
+\bibitem{Howse_2005}
+Steve~Schuman John~Howse.
+\newblock Precise visual modeling: A case-study.
+\newblock {\em Springer-Verlag}, 2005.
+
+\bibitem{Agile_book}
+Craig Larman.
+\newblock {\em Agile and Iterative Development: A Manager's Guide}.
+\newblock Addison Wesley, New Jersey, 1st edition, 2003.
+
+\bibitem{Larman_book}
+Craig Larman.
+\newblock {\em Applying UML and Patterns: An Introduction to Object-Oriented
+  Analysis and Design and Iterative Development}.
+\newblock Prentice Hall, Vancouver, third edition, 2004.
+
+\bibitem{Mateescu_1997}
+Alexandru Mateescu and Arto Salomaa.
+\newblock Formal languages: an introduction and a synopsis.
+\newblock pages 1--39, 1997.
+
+\bibitem{blackbox_site}
+Thomas Raishe.
+\newblock Black box testing.
+\newblock Feburary 2009, available at
+  \texttt{http://www.cse.fau.edu/~maria/COURSES/CEN4010-SE/C13/black.html}.
+
+\bibitem{C++Ref_book}
+Herbert Schildt.
+\newblock {\em C++: The Complete Reference}.
+\newblock McGraw-Hill, New York, third edition, 1998.
+
+\bibitem{Shin_1994}
+Sun-Joo Shin.
+\newblock The logical status of diagrams.
+\newblock {\em Cambridge University Press}, 1994.
+
+\bibitem{Gem_1}
+Gem Stapleton.
+\newblock Diagrammatic logics: Past, present and future.
+\newblock {\em Visual Modelling Group}, 2005.
+
+\bibitem{Aidan_Gem}
+Gem Stapleton and Aidan Delaney.
+\newblock Evaluating and generalizing constraint diagrams.
+\newblock {\em Visual Languages and Computing}, 2008.
+
+\bibitem{Gem_Judith}
+Gem Stapleton and Judith Masthoff.
+\newblock Incorporating negation into visual logics: A case study using euler
+  diagrams.
+
+\bibitem{Taylor_book}
+John Taylor and Rowan Garnier.
+\newblock {\em Discrete Mathematics for New Technology}.
+\newblock Institute of Physics Publishing, London, second edition, 2002.
+
+\bibitem{unittesting_book}
+Jeff Tian.
+\newblock {\em Software Quality Engineering, Testing Quality Assurance and
+  Quantifiable Improvement}.
+\newblock John Wiley \& Son, New Jersey, 1st edition, 2005.
+
+\end{thebibliography}
